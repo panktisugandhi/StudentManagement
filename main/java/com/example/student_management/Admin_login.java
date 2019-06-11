@@ -24,6 +24,13 @@ public class Admin_login extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (et_email.getText().toString().isEmpty()){
+                    Toast.makeText(Admin_login.this, "Pls Enter Email..", Toast.LENGTH_SHORT).show();
+                }
+                if (et_pass.getText().toString().isEmpty()){
+                    Toast.makeText(Admin_login.this, "Pls Enter Password..", Toast.LENGTH_SHORT).show();
+                }
                 if (et_email.getText().toString().equals("admin") && et_pass.getText().toString().equals("123")) {
                     Toast.makeText(Admin_login.this, "Login Successfully...", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(Admin_login.this,SearchScreen.class));
