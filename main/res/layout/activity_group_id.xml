@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupId"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Your Group ID IS"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/tv_rendom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:layout_marginTop="150dp"
+        android:id="@+id/go_login"
+        android:layout_width="350dp"
+        android:layout_marginStart="30dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_edit"
+        android:text="Go TO LOGIN"
+        android:layout_marginLeft="30dp" />
+</LinearLayout>

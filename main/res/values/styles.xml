@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+<array name="tech">
+    <item>Android</item>
+    <item>Python</item>
+    <item>Java</item>
+    <item>IOS</item>
+    <item>IOT</item>
+    <item>ML</item>
+    <item>WT</item>
+    <item>DOT-NET</item>
+</array>
+    <array name="duration">
+        <item>1 Month</item>
+        <item>2 Month</item>
+        <item>6 Month</item>
+        <item>1 Year</item>
+    </array>
+    <array name="sem">
+        <item>1 sem</item>
+        <item>2 sem</item>
+        <item>3 sem</item>
+        <item>4 sem</item>
+        <item>5 sem</item>
+        <item>6 sem</item>
+        <item>7 sem</item>
+        <item>8 sem</item>
+    </array>
+    <array name="degree">
+        <item>BE</item>
+        <item>ME</item>
+        <item>BCA</item>
+        <item>MCA</item>
+        <item>DIPLOMA</item>
+        <item>BSC-IT</item>
+    </array>
+</resources>
