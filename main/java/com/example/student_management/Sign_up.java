@@ -103,9 +103,9 @@ public class Sign_up extends AppCompatActivity {
                 if (clg.isEmpty()){
                     Toast.makeText(Sign_up.this, "Enter College Name..", Toast.LENGTH_SHORT).show();
                 }
-                if (gender.isEmpty()){
-                    Toast.makeText(Sign_up.this, "Select Gender..", Toast.LENGTH_SHORT).show();
-                }
+//                if (gender.isEmpty()){
+//                    Toast.makeText(Sign_up.this, "Select Gender..", Toast.LENGTH_SHORT).show();
+//                }
                 if (tech.isEmpty()){
                     Toast.makeText(Sign_up.this, "Select Technology..", Toast.LENGTH_SHORT).show();
                 }
@@ -130,9 +130,9 @@ public class Sign_up extends AppCompatActivity {
                 if (end.isEmpty()){
                     Toast.makeText(Sign_up.this, "Enter Ending Date..", Toast.LENGTH_SHORT).show();
                 }
-                if (tool.isEmpty()){
-                    Toast.makeText(Sign_up.this, "Select Tool..", Toast.LENGTH_SHORT).show();
-                }
+//                if (tool.isEmpty()){
+//                    Toast.makeText(Sign_up.this, "Select Tool..", Toast.LENGTH_SHORT).show();
+//                }
                 if (r_male.isChecked()){
                     gender="MALE";
                 }

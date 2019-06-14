@@ -79,20 +79,5 @@ public class Login_form extends AppCompatActivity {
     public void btn_signupFoam(View view) {
         startActivity(new Intent(Login_form.this, NocStatus.class));
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.login_menu, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        if (item.getItemId()== R.id.Admin);{
-
-            Intent intent = new Intent(Login_form.this,Admin_login.class);
-            startActivity(intent);
-        }
-        return true;
-    }
 }

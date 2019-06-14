@@ -7,16 +7,17 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-<array name="tech">
-    <item>Android</item>
-    <item>Python</item>
-    <item>Java</item>
-    <item>IOS</item>
-    <item>IOT</item>
-    <item>ML</item>
-    <item>WT</item>
-    <item>DOT-NET</item>
-</array>
+
+    <array name="tech">
+        <item>Android</item>
+        <item>Python</item>
+        <item>Java</item>
+        <item>IOS</item>
+        <item>IOT</item>
+        <item>ML</item>
+        <item>WT</item>
+        <item>DOT-NET</item>
+    </array>
     <array name="duration">
         <item>1 Month</item>
         <item>2 Month</item>
@@ -41,4 +42,13 @@
         <item>DIPLOMA</item>
         <item>BSC-IT</item>
     </array>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

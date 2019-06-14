@@ -32,10 +32,10 @@
     <Button
         android:layout_marginTop="150dp"
         android:id="@+id/go_login"
-        android:layout_width="350dp"
-        android:layout_marginStart="30dp"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:background="@drawable/btn_edit"
         android:text="Go TO LOGIN"
-        android:layout_marginLeft="30dp" />
+        />
 </LinearLayout>
