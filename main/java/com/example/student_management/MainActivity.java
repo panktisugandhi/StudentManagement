@@ -1,6 +1,7 @@
 package com.example.student_management;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -58,10 +59,25 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(MainActivity.this,Login_form.class));
         }  else if (id == R.id.nav_share) {
 
-        } else if (id == R.id.nav_send) {
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
+
+        } else if (id == R.id.rate) {
+
+            Intent in = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/panktisugandhi"));
+            startActivity(in);
 
         }else if (id == R.id.nav_feedback){
 
+            final Intent _Intent = new Intent(android.content.Intent.ACTION_SEND);
+            _Intent.setType("text/html");
+            _Intent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{ getString(R.string.mail_feedback_email) });
+            _Intent.putExtra(android.content.Intent.EXTRA_SUBJECT, getString(R.string.mail_feedback_subject));
+            _Intent.putExtra(android.content.Intent.EXTRA_TEXT, getString(R.string.mail_feedback_message));
+            startActivity(Intent.createChooser(_Intent, getString(R.string.title_send_feedback)));
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

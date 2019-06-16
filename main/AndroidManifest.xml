@@ -11,17 +11,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Forgotpass"
+            android:parentActivityName=".Login_form"></activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".SecondActivity" />
         <activity
             android:name=".Login_form"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".SearchScreen" />
-        <activity android:name=".Admin_login"
-            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".Admin_login"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".GroupId" />
-        <activity android:name=".NocStatus"
-            android:parentActivityName=".Login_form"/>
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".NocStatus"
+            android:parentActivityName=".Login_form" />
+        <activity android:name=".SecondActivity" />
+        <activity
+            android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -30,8 +38,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Sign_up"
-            android:parentActivityName=".NocStatus"/>
+        <activity
+            android:name=".Sign_up"
+            android:parentActivityName=".NocStatus" />
     </application>
 
 </manifest>

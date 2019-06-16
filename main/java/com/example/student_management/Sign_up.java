@@ -178,7 +178,11 @@ public class Sign_up extends AppCompatActivity {
                                             .setValue(stu).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
+
+
+                                           // firebaseAuth.signOut();
                                             Toast.makeText(Sign_up.this, "Registration successfully....", Toast.LENGTH_SHORT).show();
+                                            finish();
                                             startActivity(new Intent(Sign_up.this,GroupId.class));
                                         }
                                     });

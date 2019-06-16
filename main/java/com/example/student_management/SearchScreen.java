@@ -85,12 +85,14 @@ btn_getdata.setOnClickListener(new View.OnClickListener() {
                         users.add(user);
                         adapter.notifyDataSetChanged();
                     }
+
                 }
                 hideProgressDialog();
             }
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 hideProgressDialog();
+                Toast.makeText(SearchScreen.this, "NetWork Error... Please Check your Connection...", Toast.LENGTH_SHORT).show();
             }
         });
     }

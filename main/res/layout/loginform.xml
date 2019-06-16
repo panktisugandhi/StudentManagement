@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="50dp"
         android:text="STUDENT"
         android:textAlignment="center"
         android:layout_gravity="center"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        android:layout_marginTop="100dp">
+        android:layout_marginTop="50dp">
 
         <EditText
             android:id="@+id/et_email1"
@@ -62,6 +62,13 @@
         android:layout_margin="20dp"
         android:background="@drawable/btn_edit"
        />
+    <TextView
+        android:id="@+id/tv_forgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
     <Button
         android:id="@+id/btn_reg"
         android:layout_width="match_parent"
