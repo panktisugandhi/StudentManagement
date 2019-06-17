@@ -6,38 +6,38 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".SearchScreen">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <SearchView
+    <android.support.v7.widget.SearchView
         android:id="@+id/search"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp"
+        app:queryHint="Search"
+        android:layout_margin="5dp"
         />
+    <!--<Button-->
+        <!--android:id="@+id/getdata"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="100dp"-->
+        <!--android:background="@drawable/btn_edit"-->
+        <!--android:text="GetData" />-->
 
-    <Button
-        android:id="@+id/getdata"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:background="@drawable/btn_edit"
-        android:text="GetData" />
-
-    <Button
-        android:id="@+id/backto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:background="@drawable/btn_edit"
-        android:text="Sign OUT" />
-</LinearLayout>
-    <ListView
+    <!--<Button-->
+        <!--android:id="@+id/backto"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:background="@drawable/btn_edit"-->
+        <!--android:text="Sign OUT" />-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rview"
+        android:layout_margin="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/allusers">
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+    <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/allusers">-->
 
-    </ListView>
+    <!--</ListView>-->
     </LinearLayout>
