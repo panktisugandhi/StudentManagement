@@ -1,82 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:padding="10dp">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
     <TextView
+        android:textSize="16sp"
+        android:padding="2dp"
+        android:layout_margin="1dp"
         android:id="@+id/tvname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:textSize="16sp"
+        android:padding="2dp"
+        android:layout_margin="1dp"
         android:id="@+id/tvcontact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:layout_margin="1dp"
+        android:textSize="16sp"
+        android:padding="2dp"
         android:id="@+id/tvemail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:layout_margin="1dp"
+        android:textSize="16sp"
+        android:padding="2dp"
         android:id="@+id/tvpass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:layout_margin="1dp"
+        android:textSize="16sp"
+        android:padding="2dp"
         android:id="@+id/tvbirth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:layout_margin="1dp"
+        android:textSize="16sp"
+        android:padding="2dp"
         android:id="@+id/tvclg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:layout_margin="1dp"
+        android:textSize="16sp"
+        android:padding="2dp"
         android:id="@+id/tvgender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:layout_margin="1dp"
+        android:padding="2dp"
+        android:textSize="16sp"
         android:id="@+id/tvtech"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:layout_margin="1dp"
+        android:textSize="16sp"
+        android:padding="2dp"
         android:id="@+id/tvduration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:layout_margin="1dp"
+        android:textSize="16sp"
+        android:padding="2dp"
         android:id="@+id/tvsem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:layout_margin="1dp"
+        android:textSize="16sp"
+        android:padding="2dp"
         android:id="@+id/tvdegree"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:layout_margin="1dp"
+        android:padding="2dp"
+        android:textSize="16sp"
         android:id="@+id/tvproname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:layout_margin="1dp"
         android:id="@+id/tvgrp1"
+        android:padding="2dp"
+        android:textSize="16sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:padding="2dp"
+        android:layout_margin="1dp"
         android:id="@+id/tvgrp2"
+        android:textSize="16sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:layout_margin="1dp"
+        android:padding="2dp"
+        android:textSize="16sp"
         android:id="@+id/tvguide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:layout_margin="1dp"
+        android:padding="2dp"
+        android:textSize="16sp"
         android:id="@+id/tvjoin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:layout_margin="1dp"
+        android:padding="2dp"
+        android:textSize="16sp"
         android:id="@+id/tvend"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/tvtool"
+        android:padding="2dp"
+        android:layout_margin="1dp"
+        android:textSize="16sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>

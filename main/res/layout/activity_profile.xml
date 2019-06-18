@@ -5,12 +5,428 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfileActivity"
-    android:layout_margin="10dp"
+
     android:orientation="vertical"
     >
-    <ListView
-        android:id="@+id/student_listview"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:layout_margin="1dp"
+        android:padding="2dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "/>
+    <TextView
+        android:fontFamily="serif"
+        android:layout_marginLeft="5dp"
+        android:padding="2dp"
+        android:textSize="16sp"
+        android:id="@+id/prtvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="serif"
+            android:layout_margin="1dp"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact: "/>
+        <TextView
+            android:textColor="@color/textcolor"
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:id="@+id/prtvcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="serif"
+            android:layout_margin="1dp"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:textColor="@color/black"/>
+        <TextView
+            android:textColor="@color/textcolor"
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:id="@+id/prtvemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="serif"
+            android:layout_margin="1dp"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password: "/>
+        <TextView
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:id="@+id/prtvpass"
+            android:textColor="@color/textcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="serif"
+            android:layout_margin="1dp"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birth Date: "/>
+        <TextView
+            android:fontFamily="serif"
+            android:textColor="@color/textcolor"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:id="@+id/prtvbirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="serif"
+            android:layout_margin="1dp"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="College Name: "/>
+        <TextView
+            android:fontFamily="serif"
+            android:textColor="@color/textcolor"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:id="@+id/prtvclg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:layout_margin="1dp"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender: "/>
+        <TextView
+            android:fontFamily="serif"
+            android:textColor="@color/textcolor"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:id="@+id/prtvgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="serif"
+            android:layout_margin="1dp"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Technology: "/>
+        <TextView
+            android:textColor="@color/textcolor"
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:id="@+id/prtvtech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="serif"
+            android:layout_margin="1dp"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration: "/>
+        <TextView
+            android:fontFamily="serif"
+            android:textColor="@color/textcolor"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:id="@+id/prtvduration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="serif"
+            android:layout_margin="1dp"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semester: "/>
+        <TextView
+            android:textColor="@color/textcolor"
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:id="@+id/prtvsem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="serif"
+            android:layout_margin="1dp"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Degree: "/>
+        <TextView
+            android:fontFamily="serif"
+            android:textColor="@color/textcolor"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:id="@+id/prtvdegree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="serif"
+            android:layout_margin="1dp"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project Name: "/>
+        <TextView
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/textcolor"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:id="@+id/prtvproname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="serif"
+            android:layout_margin="1dp"
+            android:padding="2dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member1: "/>
+        <TextView
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp"
+            android:id="@+id/prtvgrp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="serif"
+            android:layout_margin="1dp"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member2: "/>
+        <TextView
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp"
+            android:id="@+id/prtvgrp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="serif"
+            android:layout_margin="1dp"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guide Name: "/>
+        <TextView
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:textColor="@color/textcolor"
+            android:id="@+id/prtvguide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="serif"
+            android:layout_margin="1dp"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join Date: "/>
+        <TextView
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:id="@+id/prtvjoin"
+            android:textColor="@color/textcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="serif"
+            android:layout_margin="1dp"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Date: "
+            android:textColor="@color/black"/>
+        <TextView
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:id="@+id/prtvend"
+            android:layout_width="wrap_content"
+            android:textColor="@color/textcolor"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="serif"
+            android:layout_margin="1dp"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tool: "/>
+        <TextView
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:id="@+id/prtvtool"
+            android:layout_width="wrap_content"
+            android:textColor="@color/textcolor"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_edit"
+    android:text="Update"
+    android:layout_gravity="center"/>
 
 </LinearLayout>

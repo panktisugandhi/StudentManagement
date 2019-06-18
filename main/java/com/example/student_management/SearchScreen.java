@@ -1,14 +1,21 @@
 package com.example.student_management;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -29,6 +36,8 @@ import java.util.ArrayList;
 
 public class SearchScreen extends AppCompatActivity {
 
+    LinearLayoutManager linearLayoutManager;
+    SharedPreferences sharedPreferences;
     DatabaseReference databaseReference;
     ArrayList<Student> list;
     RecyclerView recyclerView;
@@ -38,11 +47,73 @@ public class SearchScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_screen);
 
+        sharedPreferences = getSharedPreferences("SortSetting",MODE_PRIVATE);
+        String msorting = sharedPreferences.getString("Sort","Newest");
+        if (msorting.equals("Newest")){
+            linearLayoutManager = new LinearLayoutManager(this);
+            linearLayoutManager.setReverseLayout(true);
+            linearLayoutManager.setStackFromEnd(true);
+        }else if (msorting.equals("Oldest")){
+            linearLayoutManager = new LinearLayoutManager(this);
+            linearLayoutManager.setReverseLayout(false);
+            linearLayoutManager.setStackFromEnd(false);
+        }
+
+
         databaseReference = FirebaseDatabase.getInstance().getReference().child("Student");
         recyclerView = findViewById(R.id.rview);
         searchView = findViewById(R.id.search);
+
+        recyclerView.setLayoutManager(linearLayoutManager);
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater mi = getMenuInflater();
+        mi.inflate(R.menu.admin_menu,menu);
+        return true;
     }
 
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()){
+            case R.id.logout:
+                startActivity(new Intent(this,MainActivity.class));
+                break;
+            case R.id.sort:
+                showsortingdialog();
+        }
+        return true;
+    }
+private void showsortingdialog(){
+        String[] sortoption = {"Newest","Oldest"};
+    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+    builder.setTitle("Sort by")
+            .setIcon(R.drawable.ic_action_sort)
+            .setItems(sortoption, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                    //'which' is argument contain the index position of the select item
+                    // 0 means "newest" 1 means "oldest"
+                    if (which==0){
+
+//                        SharedPreferences.Editor editor = sharedPreferences.edit();
+//                        editor.putString("Sort","Newest");
+//                        editor.apply();
+//                        recreate();
+                    }else if(which==1){
+//                        SharedPreferences.Editor editor = sharedPreferences.edit();
+//                        editor.putString("Sort","Oldest");
+//                        editor.apply();
+//                        recreate();
+                    }
+                }
+            });
+            builder.show();
+}
     @Override
     protected void onStart() {
         super.onStart();
