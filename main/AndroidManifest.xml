@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/logo_app_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Update_Dialog"></activity>
         <activity
             android:name=".Forgotpass"
             android:parentActivityName=".Login_form" />

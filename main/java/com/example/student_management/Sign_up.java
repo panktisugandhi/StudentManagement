@@ -200,4 +200,8 @@ public class Sign_up extends AppCompatActivity {
         });
 
     }
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+    }
 }

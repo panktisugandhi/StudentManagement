@@ -170,6 +170,11 @@ private void showsortingdialog(){
             recyclerView.setAdapter(adapter_class);
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+    }
 }
 //    Button btn_getdata,btn_back;
 //    ListView listView;

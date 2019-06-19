@@ -90,6 +90,9 @@ public class Forgotpass extends AppCompatActivity {
 
             }
         });
-
+    }
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
     }
 }

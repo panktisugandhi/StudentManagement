@@ -40,4 +40,9 @@ public class Admin_login extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+    }
 }

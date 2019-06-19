@@ -84,5 +84,8 @@ public class Login_form extends AppCompatActivity {
     public void btn_signupFoam(View view) {
         startActivity(new Intent(Login_form.this, NocStatus.class));
     }
-
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+    }
 }

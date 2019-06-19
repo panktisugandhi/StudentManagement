@@ -137,11 +137,13 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@drawable/btn_edit"
-        android:text="update"
+        android:layout_margin="22dp"
+        android:background="#d67601"
+        android:text="Reset"
+        android:textColor="#fff"
+        android:textSize="18sp"
         android:id="@+id/btn_up_update"/>
         </LinearLayout>
     </ScrollView>

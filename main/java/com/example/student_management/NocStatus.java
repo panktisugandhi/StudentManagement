@@ -32,4 +32,8 @@ public class NocStatus extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+    }
 }

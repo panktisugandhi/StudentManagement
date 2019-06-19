@@ -131,47 +131,20 @@ public class ProfileActivity extends AppCompatActivity {
         }
         return true;
     }
-    public void ShowUpdateDialog(String username, String contact, String email,String pass, String birth, String clg, String gender, String tech, String duration,String sem,String degree,String projectname,String grp1,String grp2,String guide,String join,String end,String tool ){
-        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-        LayoutInflater inflater = getLayoutInflater();
-        View dialogview = inflater.inflate(R.layout.update_dialog,null);
-        dialogBuilder.setView(dialogview);
-
-       // TextView textView = dialogview.findViewById(R.id.tv_up);
-        EditText etname= dialogview.findViewById(R.id.uprtvname);
-        EditText etcon= dialogview.findViewById(R.id.uprtvname);
-        EditText etemail= dialogview.findViewById(R.id.uprtvname);
-        EditText etpass= dialogview.findViewById(R.id.uprtvname);
-        EditText etbirth= dialogview.findViewById(R.id.uprtvname);
-        EditText etclg= dialogview.findViewById(R.id.uprtvname);
-        EditText etgender= dialogview.findViewById(R.id.uprtvname);
-        EditText ettech= dialogview.findViewById(R.id.uprtvname);
-        EditText etduration= dialogview.findViewById(R.id.uprtvname);
-        EditText etsem= dialogview.findViewById(R.id.uprtvname);
-        EditText etdegree= dialogview.findViewById(R.id.uprtvname);
-        EditText etproname= dialogview.findViewById(R.id.uprtvname);
-        EditText etgrp1= dialogview.findViewById(R.id.uprtvname);
-        EditText etgrp2= dialogview.findViewById(R.id.uprtvname);
-        EditText etguide= dialogview.findViewById(R.id.uprtvname);
-        EditText etjoin= dialogview.findViewById(R.id.uprtvname);
-        EditText etend= dialogview.findViewById(R.id.uprtvname);
-        EditText ettool= dialogview.findViewById(R.id.uprtvname);
-
-        Button btn_update = dialogview.findViewById(R.id.btn_up_update);
-        dialogBuilder.setTitle("Update Student"+username);
-
-        AlertDialog alertDialog = dialogBuilder.create();
-        alertDialog.show();
-
-    }
 
     public void btn_update_click(View view) {
-
+        startActivity(new Intent(this,Update_Dialog.class));
         Toast.makeText(this, "update click", Toast.LENGTH_SHORT).show();
     }
 
     public void btn_delete_click(View view) {
+
         Toast.makeText(this, "delete click", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
     }
 }
 
