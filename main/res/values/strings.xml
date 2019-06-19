@@ -19,4 +19,6 @@
     <string name="mail_feedback_subject">BISAG Student_managment</string>
     <string name="mail_feedback_message"></string>
     <string name="title_send_feedback"></string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
 </resources>

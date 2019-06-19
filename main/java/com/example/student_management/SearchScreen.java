@@ -91,7 +91,7 @@ private void showsortingdialog(){
         String[] sortoption = {"Newest","Oldest"};
     AlertDialog.Builder builder = new AlertDialog.Builder(this);
     builder.setTitle("Sort by")
-            .setIcon(R.drawable.ic_action_sort)
+            .setIcon(R.drawable.ic_sort)
             .setItems(sortoption, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {

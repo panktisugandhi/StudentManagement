@@ -36,7 +36,6 @@ public class Forgotpass extends AppCompatActivity {
         useremail = findViewById(R.id.et_forgot_email);
         //new_pass = findViewById(R.id.et_forgot_pass);
         btn_send = findViewById(R.id.btnsend);
-        btn_cancle = findViewById(R.id.btncancle);
         user = FirebaseAuth.getInstance().getCurrentUser();
 
 
@@ -92,15 +91,5 @@ public class Forgotpass extends AppCompatActivity {
             }
         });
 
-        btn_cancle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                    firebaseAuth.signOut();
-                    finish();
-                    startActivity(new Intent(Forgotpass.this,Login_form.class));
-
-            }
-        });
     }
 }

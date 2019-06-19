@@ -10,23 +10,23 @@
     tools:showIn="@layout/app_bar_main">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="352dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:src="@drawable/bisag"
-        />
+        android:src="@drawable/bisagedit" />
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="60dp"
         android:padding="10dp"
-        android:text="WELCOME TO BISAG"
+        android:text="BISAG"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="30sp"
+        android:textSize="50sp"
         android:textStyle="bold"
         app:fontFamily="serif" />
 </LinearLayout>

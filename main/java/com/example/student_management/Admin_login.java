@@ -31,7 +31,7 @@ public class Admin_login extends AppCompatActivity {
                 if (et_pass.getText().toString().isEmpty()){
                     Toast.makeText(Admin_login.this, "Pls Enter Password..", Toast.LENGTH_SHORT).show();
                 }
-                if (et_email.getText().toString().equals("admin") && et_pass.getText().toString().equals("123")) {
+                if (et_email.getText().toString().equals("admin@gmail.com") && et_pass.getText().toString().equals("123")) {
                     Toast.makeText(Admin_login.this, "Login Successfully...", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(Admin_login.this,SearchScreen.class));
                 } else {

@@ -105,8 +105,6 @@ public class ProfileActivity extends AppCompatActivity {
 
                // Toast.makeText(ProfileActivity.this, firebaseAuth.getUid(), Toast.LENGTH_SHORT).show();
             }
-
-
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
@@ -165,6 +163,15 @@ public class ProfileActivity extends AppCompatActivity {
         AlertDialog alertDialog = dialogBuilder.create();
         alertDialog.show();
 
+    }
+
+    public void btn_update_click(View view) {
+
+        Toast.makeText(this, "update click", Toast.LENGTH_SHORT).show();
+    }
+
+    public void btn_delete_click(View view) {
+        Toast.makeText(this, "delete click", Toast.LENGTH_SHORT).show();
     }
 }
 

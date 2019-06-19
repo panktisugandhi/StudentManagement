@@ -11,8 +11,9 @@
         android:roundIcon="@mipmap/logo_app_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Forgotpass"
-            android:parentActivityName=".Login_form"></activity>
+        <activity
+            android:name=".Forgotpass"
+            android:parentActivityName=".Login_form" />
         <activity
             android:name=".ProfileActivity"
             android:parentActivityName=".SecondActivity" />
@@ -27,7 +28,6 @@
         <activity
             android:name=".NocStatus"
             android:parentActivityName=".Login_form" />
-        <activity android:name=".SecondActivity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
